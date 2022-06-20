@@ -1,0 +1,33 @@
+.body__nimotv {
+    margin-left: 50px;
+    margin-top: 60px;
+    width: calc(100vw - 60px);
+    min-height: 150vh;
+    display: flex;
+    background-image: url(../img/bannermixi.jpg);
+    background-size: calc(100vw - 60px);
+}
+
+.check_sidemenu:checked ~ .body__nimotv {
+    margin-left: 220px;
+    width: calc(100vw - 230px);
+    background-size: calc(100vw - 230px);
+}
+
+.msg__error {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .app {
+        display: none;
+    }
+
+    .msg__error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

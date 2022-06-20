@@ -1,0 +1,74 @@
+.auth_nimo_respon {
+    display: none;
+}
+
+.bars_menu {
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.menu__respon {
+    position: fixed;
+    z-index: 1000;
+    background-color: #000000a2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.menu__respon__main {
+    cursor: default;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(100%);
+    transition: .3s;
+    opacity: 0;
+    background-color: #222222;
+}
+
+.close__menu_respon {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 20px;
+    float: right;
+}
+
+.close__menu_respon:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.check__menu__respon:checked ~ .menu__respon {
+    display: block;
+}
+
+.check__menu__respon:checked ~ .menu__respon__main {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 1320px) {
+    .hidden__sc {
+        display: none;
+    }
+}
+
+@media (max-width: 1105px) {
+    .auth_nimo__hidden {
+        display: none;
+    }
+
+    .auth_nimo_respon {
+        display: flex;
+        margin-right: 5%;
+        margin-left: 25%;
+    }
+}
